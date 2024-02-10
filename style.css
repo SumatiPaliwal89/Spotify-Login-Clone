@@ -1,0 +1,242 @@
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family,CircularSpTitle,CircularSpTitle-Tall,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+}
+
+ .logo{
+  padding-left: 29px;
+  padding-top: 22px;
+ }
+body{ 
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(41,41,41,1) 95%);
+} 
+.container-fluid{
+  height: 100px;
+  background-color: black;
+ }
+.container-fluid img{
+  height:59px;
+  width:127px;
+}
+.container{
+  background: linear-gradient(180deg, rgb(12, 12, 12) 0%, rgb(22, 22, 22) 87%);
+  width: 734px;
+  height: 100%;
+  border-radius: 8px;
+  margin-top: 32px;
+}
+.container h1{
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+  letter-spacing: -2px;
+  margin: 48px 0px;
+  font-size: 48px;
+  font-weight: 700;
+  
+}
+.container img{
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: -32px;
+  margin-right: 36px;
+  align-items: flex;
+}
+button {
+    background-color: black;
+    border-radius: 500px;
+    border-style: solid;
+    border-width: 0.8px;
+    border-color: rgb(114,114,114);
+    height: 48px;
+    width:  324px;
+    margin-bottom: 8px;
+    margin-left: 205px;
+    margin-right: 205px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:700;
+    color: rgba(255, 255, 255, 0.9);  
+     }
+button:hover{
+    border-radius: 24px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: white;
+  }
+button:active{
+    outline: 2px solid white;
+  }
+.container hr{
+  color:rgb(114,114,114);
+  height: 1px;
+  width: 534px;
+  margin: 40px 100px 0px;
+  border-color:rgb(114,114,114);
+  margin-bottom: 16px ;
+}
+.form-group{
+  color: white;
+  padding-top: 16px;
+  padding-left: 205px;
+  padding-right: 205px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.form-group .form-control{
+  background-color: rgb(18,18,18);
+  height: 48px;
+  width: 324px;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 550;
+  border-color:  rgba(167, 167, 167, 0.833);
+  color:white;
+}
+.form-group .form-control:hover{
+  border-color: white;
+
+}
+.form-group .form-control::placeholder{
+  color: rgba(167, 167, 167, 0.833);
+}
+input.form-control:focus {
+
+  outline:none ;
+  outline-width: 0 ;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+input[type="password"].form-control:focus{
+  border-color: white;
+  border-width: 3px;
+ 
+}
+input[type="text"].form-control:focus{
+  border-color: white;
+  border-width: 3px;
+}
+.form-group img{
+  position:absolute;
+  top: 744px;
+  right:560px;
+
+}
+.login{
+  background-color: rgb(31,223,100);
+  color: black;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  cursor: default;
+}
+.login:hover{
+  font-weight: 800;
+  border: none;
+  transform: scale(1.02);
+  transition: ease-in-out;
+  
+}
+input[type="checkbox"].toggle {
+  opacity: 0;
+  position: relative;
+  left: -9000px;
+  right: -9000px;
+  
+}
+input[type="checkbox"].toggle +label::before{
+  content: "";
+  width: 30px;
+  height: 16px;
+  background-color: #727272;
+  border-radius: 1em;
+  margin-right: 12px;
+  margin-left: 205px;
+
+}
+input[type="checkbox"].toggle +label{
+  display: flex;
+  align-items: center ;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  
+}
+input[type="checkbox"].toggle +label::after{
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 1em;
+  position: absolute;
+  left: 0.1em;
+  margin-left: 205px;
+  
+}
+
+input[type="checkbox"].toggle:checked + label::before {
+  background-color: #1ED760 ;
+  transition: ease-in-out;
+ 
+  
+  }
+  input[type="checkbox"].toggle:focus + label::before {
+    outline: 3px solid white;
+
+  }
+
+input[type="checkbox"].toggle:checked + label::after {
+  left: 1em;
+  
+  
+}
+
+.pswd{
+  margin-left: 284px;
+  color: white;
+  
+}
+.pswd:hover {
+  color: #1ED760;
+}
+
+.signup{
+  margin-top: 48px;
+  color:rgb(167,167,167);
+  font-size: 15px;
+  font-weight: 400;
+  display: inline-flex;
+  margin-left: 212px;
+  margin-bottom: 48px;
+}
+.signup a{
+  color: white;
+  padding-left: 8px;
+}
+.signup a:hover{
+  color: #1ED760; 
+}
+.terms{
+  display: inline-flex;
+  color:rgb(167, 167, 167);
+  font-weight: 400;
+  font-size: 11px;
+  margin-top: 32px;
+  height: 79px;
+  width: 100%;
+  background-color: rgb(22,22,22);
+  padding-left: 523px;
+  padding-top: 32px;
+}
+
+
+.terms a{
+  color: rgb(167, 167, 167);
+}
